@@ -1,1 +1,2 @@
 This repository contains frontend of the Agro Nepal website.
+All the codes are easy to understand!
