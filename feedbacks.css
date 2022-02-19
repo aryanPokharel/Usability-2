@@ -1,0 +1,13 @@
+body{
+    background-image: url("feedbacks&querries.png");
+    background-size: 100% 120%;
+    color: red;
+}
+
+.form_container{
+    margin: 10%;
+}
+.btnsection{
+    padding-left: 40%;
+    padding-top: 2%;
+}

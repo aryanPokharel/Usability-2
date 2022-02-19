@@ -1,0 +1,9 @@
+body{
+    background-image: url("joinupbg.jpg");
+    background-size: 100%;
+    color: lime
+}
+.container{
+    align-content: center;
+    margin-top: 5%;
+}

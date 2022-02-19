@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WishList</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+
+        <style>
+            body{
+                background-image: url("wishlistbg.jpg");
+                justify-items: center;
+            }
+            .container{
+                margin-top:10%;
+            }
+        </style>
+</head>
+<body>
+    <link type="text/css" rel="stylesheet" href="{% static '/css/wishliststyles.css' %}">
+
+
+<div class="container" id="mainContainer">
+    <h2 class="text-center text-light">Here's Your Wishlist</h2>
+    <table class="table table-sm table-hover table-success" id="table">
+        <tr class="table-row table-primary">
+            <th class="table-heading text-center">Customer ID</th>
+            <th class="table-heading text-center">Your Name</th>
+            <th class="table-heading text-center">Wish Name</th>
+            <th class="table-heading text-center">Price ($)</th>
+            <th class="table-heading text-center">Wish Date</th>
+            <th class="table-heading text-center">Actions</th>
+        </tr>
+
+        <tr class="table-row">
+            <td class="table-data text-center">1234</td>
+            <td class="table-data text-center">Ram Gopal</td>
+            <td class="table-data text-center">Tractor</td>
+            <td class="table-data text-center">Rs200000</td>
+            <td class="table-data text-center">14/02/2022</td>
+
+
+
+            <td class="table-data text-center">
+
+                <form action="{% url 'finalize' product_id %}" class="d-inline">
+
+                    <input type="reset" class="btn btn-primary" value="Order">
+                </form>
+
+                <form method="POST" action="{% url 'delete' wish.id %}" class="d-inline">
+
+                    <input type="reset" class="btn btn-danger" value="Delete">
+                </form>
+
+
+            </td>
+        </tr>
+        <tr class="table-row">
+            <td class="table-data text-center">1234</td>
+            <td class="table-data text-center">Ram Gopal</td>
+            <td class="table-data text-center">Jumla Apples</td>
+            <td class="table-data text-center">Rs300</td>
+            <td class="table-data text-center">15/02/2022</td>
+
+
+
+            <td class="table-data text-center">
+
+                <form action="{% url 'finalize' product_id %}" class="d-inline">
+
+                    <input type="reset" class="btn btn-primary" value="Order">
+                </form>
+
+                <form method="POST" action="{% url 'delete' wish.id %}" class="d-inline">
+
+                    <input type="reset" class="btn btn-danger" value="Delete">
+                </form>
+
+
+            </td>
+        </tr>
+
+        <tr class="table-row">
+            <td class="table-data text-center">1234</td>
+            <td class="table-data text-center">Ram Gopal</td>
+            <td class="table-data text-center">Harvestor</td>
+            <td class="table-data text-center">Rs800000</td>
+            <td class="table-data text-center">18/02/2022</td>
+
+
+
+            <td class="table-data text-center">
+
+                <form action="{% url 'finalize' product_id %}" class="d-inline">
+
+                    <input type="reset" class="btn btn-primary" value="Order">
+                </form>
+
+                <form method="POST" action="{% url 'delete' wish.id %}" class="d-inline">
+
+                    <input type="reset" class="btn btn-danger" value="Delete">
+                </form>
+
+
+            </td>
+        </tr>
+
+
+
+    </table>
+</div>
+
+</body>
+</html>

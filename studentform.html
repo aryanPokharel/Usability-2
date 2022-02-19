@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous">
+</head>
+<body>
+    <div class="container border border-success bg-secondary text-white">
+
+        <form method="POST" class="post-form m-3" action="#">
+            <h2>Please provide us the required credentials</h2>
+            <div class="form-group mt-3">
+                <label for="emailentry">Email address:</label>
+                <input type="email" name="email" class="form-control" id="emailentry" placeholder="name@example.com">
+            </div>
+            <div class="form-group mt-3">
+                <label for="nameentry">Full Name:</label>
+                <input type="text" name="name" class="form-control" id="nameentry">
+            </div>
+            <div class="form-group mt-3">
+                <label for="addressentry">Address:</label>
+                <input type="text" name="address" class="form-control" id="addressentry">
+            </div>
+            <div class="form-group mt-3">
+                <label for="stateSelector">State:</label>
+                <select class="form-control" name="state" id="stateSelector">
+                    <option>Pradesh-1</option>
+                    <option>Pradesh-2</option>
+                    <option>Bagmati Province</option>
+                    <option>Gandaki Province</option>
+                    <option>Lumbini Province</option>
+                    <option>Karnali Province</option>
+                    <option>SudurPaschim Province</option>
+                </select>
+            </div>
+            <div class="form-group mt-3">
+                <label for="courseSelector">Please select a course:</label>
+                <select multiple name="course" class="form-control" id="courseSelector">
+                    <option>Farm Management</option>
+                    <option>Market Analysis</option>
+                    <option>Crop Cultivation</option>
+                    <option>Fish Farming</option>
+                    <option>Horticulture</option>
+                </select>
+            </div>
+            <div class="form-group mt-3">
+                <label for="messages">Any Messages?:</label>
+                <textarea name="message" class="form-control" id="messages" rows="3"
+                          placeholder="Anything more info you wish to provide!"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success mt-3">Submit</button>
+            <button type="reset" class="btn btn-danger mt-3">Reset</button>
+        </form>
+    </div>
+    
+</body>
+</html>
